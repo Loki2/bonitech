@@ -12,5 +12,5 @@ if(process.env.NODE_ENV !== 'production'){
   //Create Server
   const server = http.createServer(app);
   server.listen(port, "0.0.0.0", () => {
-    console.log(`🚀 Server is running http://localhost:${PORT}`);
+    console.log(`🚀 Server is running http://localhost:${port}`);
   })
