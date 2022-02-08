@@ -6,11 +6,11 @@ if(process.env.NODE_ENV !== 'production'){
   
   const http = require('http');
   const app = require('./src/App');
-  const port = process.env.APP_PORT || 5000;
+  let port = process.env.PORT || 5000;
   
   
   //Create Server
   const server = http.createServer(app);
-  server.listen(port, "0.0.0.0", () => {
+  server.listen(port, () => {
     console.log(`🚀 Server is running http://localhost:${port}`);
   })
